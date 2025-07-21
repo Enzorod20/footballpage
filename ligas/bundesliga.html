@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-ligas.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+</head>
+<body class="fondo-bundesliga">
+    <div id="header-container"></div>
+
+    <main class="liga-main">
+      <h1 class="liga-titulo">Bundesliga</h1>
+      <img src="data:image/png;base64,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" alt="" class="logo-seriea">
+      <h2 class="liga-subtitulo">Eras de la bundesliga</h2>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Campeonato unificado (1903-33)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era del tercer Reich (1933-45)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Las Oberligas (1945-63)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Bundesliga (1963-70)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Bayern de Beckenbauer (1971-79)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Paridad (1980-90)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Reunificacion y Caos (1991-98)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Dominio parcial del Bayern (1999-12)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Dominio total del Bayern (2013-23)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era moderna (2024-25)</span>
+        </div>
+        <div class="era-contenido">
+        <p>
+          contenido 
+        </p>
+        </div>
+      </section>
+
+
+    </main>
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-clubes.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+</head>
+<body class="fondo-clubesing">
+    <div id="header-container"></div>
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>

@@ -1,0 +1,813 @@
+/* =========================
+   INDEX (Página principal)
+   ========================= */
+body.fondo-index {
+    background: #EEF2FB;
+}
+body.fondo-index header {
+    background: #045694;
+}
+body.fondo-index nav a {
+    color: #fff;
+}
+body.fondo-index nav a:hover {
+    background: #045690;
+    color: #fff;
+}
+/* Menú desplegable para index.html */
+body.fondo-index #barra-desplegable {
+    background: #fff;
+    color: #045694;
+}
+body.fondo-index #barra-desplegable li:hover,
+body.fondo-index #barra-desplegable li:hover a {
+    background: #357ab8;
+    color: #fff !important;
+}
+
+/* =========================
+   LIGAS
+   ========================= */
+
+/* --- LaLiga --- */
+body.fondo-laliga {
+    background: #E4002B;
+    color: #Fff;
+}
+body.fondo-laliga header {
+    background: #061934;
+}
+body.fondo-laliga nav a:hover {
+    background: #FCBB2C;
+    color: #061934;
+}
+/* Menú desplegable para laliga.html */
+body.fondo-laliga #barra-desplegable {
+    background: #f5f855;
+    color: #E4002B;
+}
+body.fondo-laliga #barra-desplegable li:hover {
+    background: #FCBB2C;
+    color: #061934;
+}
+
+/* --- Serie A --- */
+body.fondo-seriea {
+    background: #092651;
+}
+body.fondo-seriea header {
+    background: #0057B8;
+}
+body.fondo-seriea nav a {
+    color: #fff;
+}
+body.fondo-seriea nav a:hover {
+    background: #fff;
+    color: #0057B8;
+    font-weight: bold;
+    border-left: 4px solid #008C45; /* Verde bandera Italia */
+    border-right: 4px solid #CD212A; /* Rojo bandera Italia */
+}
+/* Menú desplegable para seriea.html */
+body.fondo-seriea #barra-desplegable {
+    background: #fff;
+    color: #0057B8;
+}
+body.fondo-seriea #barra-desplegable li:hover {
+    background: #008C45; /* Verde bandera Italia */
+    color: #fff;
+    font-weight: bold;
+    border-left: 4px solid #CD212A; /* Rojo bandera Italia */
+    border-right: 4px solid #fff;
+}
+
+/* --- Premier League --- */
+body.fondo-premier {
+    background: #37003C;
+}
+body.fondo-premier header {
+    background: #1E0021;
+}
+body.fondo-premier nav a {
+    color: #fff;
+}
+body.fondo-premier nav a:hover {
+    background: #00FF85; /* Verde neón Premier */
+    color: #1E0021;
+    font-weight: bold;
+}
+/* Menú desplegable para premier.html */
+body.fondo-premier #barra-desplegable {
+    background: #fff;
+    color: #37003C;
+}
+body.fondo-premier #barra-desplegable li:hover {
+    background: #00FF85;
+    color: #1E0021;
+    font-weight: bold;
+}
+
+/* --- Bundesliga --- */
+body.fondo-bundesliga {
+    background: #191E24;
+}
+body.fondo-bundesliga header {
+    background: #34383C;
+}
+body.fondo-bundesliga nav a {
+    color: #fff;
+}
+body.fondo-bundesliga nav a:hover {
+    background: #ED2226;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-bundesliga #barra-desplegable {
+    background: #fff;
+    color: #000000;
+}
+body.fondo-bundesliga #barra-desplegable li:hover {
+    background: #08560A;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* --- Ligue 1 --- */
+body.fondo-ligue1 {
+    background: #085FFF;
+}
+body.fondo-ligue1 header {
+    background: #262624;
+}
+body.fondo-ligue1 nav a {
+    color: #FF7FDE;
+}
+body.fondo-ligue1 nav a:hover {
+    background: #000;
+    color: #FFBC0D;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-ligue1 #barra-desplegable {
+    background: #262624;
+    color: #000000;
+}
+body.fondo-ligue1 #barra-desplegable li:hover {
+    background: #000;
+    color: #FFBC0D;
+    font-weight: bold;
+}
+/* --- Primeira --- */
+body.fondo-primeira {
+    background: #E73827;
+}
+body.fondo-primeira header {
+    background: #1E271F;
+}
+body.fondo-primeira nav a {
+    color: #fff;
+}
+body.fondo-primeira nav a:hover {
+    background: #356F39;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-primeira #barra-desplegable {
+    background: #706F74;
+    color: #000000;
+}
+body.fondo-primeira #barra-desplegable li:hover {
+    background: #2C2C2E;
+    color: #fff;
+    font-weight: bold;
+}
+/* --- Erediviese --- */
+body.fondo-erediviese {
+    background: #F36C21;
+}
+body.fondo-erediviese header {
+    background: #253780;
+}
+body.fondo-erediviese nav a {
+    color: #fff;
+}
+body.fondo-erediviese nav a:hover {
+    background: #001F60;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-erediviese #barra-desplegable {
+    background: #0600FF;
+    color: #000000;
+}
+body.fondo-erediviese #barra-desplegable li:hover {
+    background: #00b7ff;
+    color: #fff;
+    font-weight: bold;
+}
+/* --- Liga argentina --- */
+body.fondo-primera {
+    background: #Fff;
+}
+body.fondo-primera header {
+    background: #98CEF0;
+}
+body.fondo-primera nav a {
+    color: #000;
+}
+body.fondo-primera nav a:hover {
+    background: #7abce6;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-primera #barra-desplegable {
+    background: #BA9F6C;
+    color: #000000;
+}
+body.fondo-primera #barra-desplegable li:hover {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+/* --- Liga brasil --- */
+body.fondo-brasilerao {
+    background: #Fff;
+}
+body.fondo-brasilerao header {
+    background: #014DFF;
+}
+body.fondo-brasilerao nav a {
+    color: #fff;
+}
+body.fondo-brasilerao nav a:hover {
+    background: #FFCD00;
+    color: #059E2A;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-brasilerao #barra-desplegable {
+    background: #20195F;
+    color: #fff;
+}
+body.fondo-brasilerao #barra-desplegable li:hover {
+    background: #00A032;
+    color: #000;
+    font-weight: bold;
+}
+/* --- Liga MLS --- */
+body.fondo-mls {
+    background: #Fff;
+}
+body.fondo-mls header {
+    background: #212844;
+}
+body.fondo-mls nav a {
+    color: #fff;
+}
+body.fondo-mls nav a:hover {
+    background: #15192B;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-mls #barra-desplegable {
+    background: #E2E2E2;
+    color: #fff;
+}
+body.fondo-mls #barra-desplegable li:hover {
+    background: #D8D8D8;
+    color: #000;
+    font-weight: bold;
+}
+/* --- Liga Mx --- */
+body.fondo-ligamx {
+    background: #02914c;
+}
+body.fondo-ligamx header {
+    background: #0C5258;
+}
+body.fondo-ligamx nav a {
+    color: #fff;
+}
+body.fondo-ligamx nav a:hover {
+    background: #15192B;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-ligamx #barra-desplegable {
+    background: #E2E2E2;
+    color: #fff;
+}
+body.fondo-ligamx #barra-desplegable li:hover {
+    background: #000;
+    color: #BA9F6C;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CLUBES
+   ========================= */
+
+/* --- Clubes de España --- */
+body.fondo-clubesesp {
+    background: #E4002B;
+}
+body.fondo-clubesesp header {
+    background: #061934;
+}
+body.fondo-clubesesp nav a:hover {
+    background: #FCBB2C;
+    color: #061934;
+}
+/* Menú desplegable para clubesesp.html */
+body.fondo-clubesesp #barra-desplegable {
+    background: #f5f855;
+    color: #E4002B;
+}
+body.fondo-clubesesp #barra-desplegable li:hover {
+    background: #FCBB2C;
+    color: #061934;
+}
+
+/* --- Clubes de Italia --- */
+body.fondo-clubesitl {
+    background: #092651;
+}
+body.fondo-clubesitl header {
+    background: #0057B8;
+}
+body.fondo-clubesitl nav a {
+    color: #fff;
+}
+body.fondo-clubesitl nav a:hover {
+    background: #fff;
+    color: #0057B8;
+    font-weight: bold;
+    border-left: 4px solid #008C45;
+    border-right: 4px solid #CD212A;
+}
+/* Menú desplegable para clubesitl.html */
+body.fondo-clubesitl #barra-desplegable {
+    background: #fff;
+    color: #0057B8;
+}
+body.fondo-clubesitl #barra-desplegable li:hover {
+    background: #008C45;
+    color: #fff;
+    font-weight: bold;
+    border-left: 4px solid #CD212A;
+    border-right: 4px solid #fff;
+}
+
+/* --- Clubes de Inglaterra --- */
+body.fondo-clubesing {
+    background: #37003C;
+}
+body.fondo-clubesing header {
+    background: #1E0021;
+}
+body.fondo-clubesing nav a {
+    color: #fff;
+}
+body.fondo-clubesing nav a:hover {
+    background: #00FF85;
+    color: #1E0021;
+    font-weight: bold;
+}
+/* Menú desplegable para clubesing.html */
+body.fondo-clubesing #barra-desplegable {
+    background: #fff;
+    color: #37003C;
+}
+body.fondo-clubesing #barra-desplegable li:hover {
+    background: #00FF85;
+    color: #1E0021;
+    font-weight: bold;
+}
+
+/*clubes alemania*/
+body.fondo-clubesale {
+    background: #191E24;
+}
+body.fondo-clubesale header {
+    background: #34383C;
+}
+body.fondo-clubesale nav a {
+    color: #fff;
+}
+body.fondo-clubesale nav a:hover {
+    background: #ED2226;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubesale #barra-desplegable {
+    background: #fff;
+    color: #000000;
+}
+body.fondo-clubesale #barra-desplegable li:hover {
+    background: #08560A;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* --- clubes francia --- */
+body.fondo-clubesfra {
+    background: #085FFF;
+}
+body.fondo-clubesfra header {
+    background: #262624;
+}
+body.fondo-clubesfra nav a {
+    color: #FF7FDE;
+}
+body.fondo-clubesfra nav a:hover {
+    background: #000;
+    color: #FFBC0D;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubesfra #barra-desplegable {
+    background: #262624;
+    color: #000000;
+}
+body.fondo-clubesfra #barra-desplegable li:hover {
+    background: #000;
+    color: #FFBC0D;
+    font-weight: bold;
+}
+
+/* --- Clubes portugal --- */
+body.fondo-clubesport {
+    background: #E73827;
+}
+body.fondo-clubesport header {
+    background: #1E271F;
+}
+body.fondo-clubesport nav a {
+    color: #fff;
+}
+body.fondo-clubesport nav a:hover {
+    background: #356F39;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubesport #barra-desplegable {
+    background: #706F74;
+    color: #000000;
+}
+body.fondo-clubesport #barra-desplegable li:hover {
+    background: #2C2C2E;
+    color: #fff;
+    font-weight: bold;
+}
+/* --- clubes holanda --- */
+body.fondo-clubeshol {
+    background: #F36C21;
+}
+body.fondo-clubeshol header {
+    background: #253780;
+}
+body.fondo-clubeshol nav a {
+    color: #fff;
+}
+body.fondo-clubeshol nav a:hover {
+    background: #001F60;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubeshol #barra-desplegable {
+    background: #0600FF;
+    color: #000000;
+}
+body.fondo-clubeshol #barra-desplegable li:hover {
+    background: #00b7ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* --- clubes argentina --- */
+body.fondo-clubesarg {
+    background: #Fff;
+}
+body.fondo-clubesarg header {
+    background: #98CEF0;
+}
+body.fondo-clubesarg nav a {
+    color: #000;
+}
+body.fondo-clubesarg nav a:hover {
+    background: #7abce6;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubesarg #barra-desplegable {
+    background: #BA9F6C;
+    color: #000000;
+}
+body.fondo-clubesarg #barra-desplegable li:hover {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- clubes brasil --- */
+body.fondo-clubesbra {
+    background: #Fff;
+}
+body.fondo-clubesbra header {
+    background: #014DFF;
+}
+body.fondo-clubesbra nav a {
+    color: #fff;
+}
+body.fondo-clubesbra nav a:hover {
+    background: #FFCD00;
+    color: #059E2A;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubesbra #barra-desplegable {
+    background: #20195F;
+    color: #fff;
+}
+body.fondo-clubesbra #barra-desplegable li:hover {
+    background: #00A032;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- clubes MLS --- */
+body.fondo-clubeseeuu {
+    background: #Fff;
+}
+body.fondo-clubeseeuu header {
+    background: #212844;
+}
+body.fondo-clubeseeuu nav a {
+    color: #fff;
+}
+body.fondo-clubeseeuu nav a:hover {
+    background: #15192B;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubeseeuu #barra-desplegable {
+    background: #E2E2E2;
+    color: #fff;
+}
+body.fondo-clubeseeuu #barra-desplegable li:hover {
+    background: #D8D8D8;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- clubes Mx --- */
+body.fondo-clubesmex {
+    background: #02914c;
+}
+body.fondo-clubesmex header {
+    background: #0C5258;
+}
+body.fondo-clubesmex nav a {
+    color: #fff;
+}
+body.fondo-clubesmex nav a:hover {
+    background: #15192B;
+    color: #fff;
+    font-weight: bold;
+}
+/* Menú desplegable para bundesliga */
+body.fondo-clubesmex #barra-desplegable {
+    background: #E2E2E2;
+    color: #fff;
+}
+body.fondo-clubesmex #barra-desplegable li:hover {
+    background: #000;
+    color: #BA9F6C;
+    font-weight: bold;
+}
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+header {
+    background: #08366b;
+    padding: 0;
+    position: relative;
+}
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    font-weight: 500;
+}
+nav a:hover {
+    background: #357ab8;
+}
+#barra-desplegable {
+    display: none;
+    background: #e3f0fb;
+    color: #204080;
+    padding: 8px 0;
+    border-radius: 6px;
+    font-size: 1.05em;
+    box-shadow: 0 4px 12px rgba(32,64,128,0.12);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 10;
+    margin: 0;
+    min-width: 160px;
+    max-width: 240px;
+    white-space: normal;
+}
+#barra-desplegable ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#barra-desplegable li {
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#barra-desplegable li:hover {
+    background: #b3d4fc;
+}
+#barra-desplegable a,
+#barra-desplegable a:visited,
+#barra-desplegable a:hover,
+#barra-desplegable a:active,
+#barra-desplegable a:focus {
+    color: #204080 !important;
+    text-decoration: none !important;
+    background: none !important;
+    outline: none !important;
+}
+
+/* Bundesliga y Clubes de Alemania: palabras negras, blancas al pasar el cursor */
+body.fondo-bundesliga #barra-desplegable a,
+body.fondo-bundesliga #barra-desplegable a:visited,
+body.fondo-clubesale #barra-desplegable a,
+body.fondo-clubesale #barra-desplegable a:visited {
+    color: #000 !important;
+}
+
+body.fondo-bundesliga #barra-desplegable li:hover a,
+body.fondo-clubesale #barra-desplegable li:hover a {
+    color: #fff !important;
+}
+
+body.fondo-ligue1 #barra-desplegable a,
+body.fondo-ligue1 #barra-desplegable a:visited,
+body.fondo-clubesfra #barra-desplegable a,
+body.fondo-clubesfra #barra-desplegable a:visited {
+    color: #FF7FDE !important;
+}
+
+body.fondo-ligue1 #barra-desplegable li:hover a,
+body.fondo-clubesfra #barra-desplegable li:hover a {
+    color: #FFBC0D !important;
+}
+
+/* Hover amarillo en encabezado y menú desplegable para Ligue 1 y Clubes de Francia */
+body.fondo-primeira nav a:hover,
+body.fondo-primeira #barra-desplegable li:hover,
+body.fondo-primeira #barra-desplegable li:hover a,
+body.fondo-primeira #barra-desplegable a:hover,
+body.fondo-clubesport nav a:hover,
+body.fondo-clubesport #barra-desplegable li:hover,
+body.fondo-clubesport #barra-desplegable li:hover a,
+body.fondo-clubesport #barra-desplegable a:hover,
+body.fondo-primeira #barra-desplegable a,
+body.fondo-primeira #barra-desplegable a:visited,
+body.fondo-clubesport #barra-desplegable a,
+body.fondo-clubesport #barra-desplegable a:visited {
+    color: #FFf !important;
+}
+
+body.fondo-erediviese #barra-desplegable a,
+body.fondo-erediviese #barra-desplegable a:visited,
+body.fondo-clubeshol #barra-desplegable a,
+body.fondo-clubeshol #barra-desplegable a:visited,
+body.fondo-erediviese #barra-desplegable li:hover a,
+body.fondo-clubeshol #barra-desplegable li:hover a  {
+    color: #fff !important;
+}
+
+body.fondo-primera #barra-desplegable a,
+body.fondo-primera #barra-desplegable a:visited,
+body.fondo-clubesarg #barra-desplegable a,
+body.fondo-clubesarg #barra-desplegable a:visited {
+    color: #Fff !important;
+}
+
+body.fondo-primera #barra-desplegable li:hover a,
+body.fondo-clubesarg #barra-desplegable li:hover a {
+    color: #98CEF0 !important;
+}
+
+body.fondo-brasilerao #barra-desplegable a,
+body.fondo-brasilerao #barra-desplegable a:visited,
+body.fondo-clubesbra #barra-desplegable a,
+body.fondo-clubesbra #barra-desplegable a:visited {
+    color: #FFCD00 !important;
+}
+
+body.fondo-brasilerao #barra-desplegable li:hover a,
+body.fondo-clubesbra #barra-desplegable li:hover a {
+    color: #fff !important;
+}
+
+body.fondo-mls #barra-desplegable li:hover a,
+body.fondo-clubeseeuu #barra-desplegable li:hover a {
+    color: #A71E2D !important;
+}
+
+body.fondo-ligamx #barra-desplegable a,
+body.fondo-ligamx #barra-desplegable a:visited,
+body.fondo-clubesmex #barra-desplegable a,
+body.fondo-clubesmex #barra-desplegable a:visited {
+    color: #db0c1d !important;
+}
+
+body.fondo-ligamx #barra-desplegable li:hover a,
+body.fondo-clubesmex #barra-desplegable li:hover a {
+    color: #BA9F6C !important;
+}
+
+/* Estilos especiales para laliga.html */
+.laliga-main {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    padding: 0 16px;
+}
+
+.laliga-titulo {
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 0.2em;
+}
+
+.laliga-subtitulo {
+    text-align: center;
+    font-size: 1.5em;
+    color: #E4002B;
+    margin-bottom: 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.era-laliga {
+    margin-bottom: 2.5em;
+}
+
+.era-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.era-titulo::before,
+.era-titulo::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1.5px solid #fff;
+    margin: 0 12px;
+    opacity: 0.3;
+}
+
+.era-titulo span {
+    white-space: nowrap;
+}
+
+.era-contenido {
+    margin-left: 0;
+    color: #fff;
+    font-size: 1.08em;
+}

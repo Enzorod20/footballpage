@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-ligas.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+</head>
+<body class="fondo-premier">
+    <div id="header-container"></div>
+    
+    <main class="liga-main">
+      <h1 class="liga-titulo">Premier League</h1>
+      <img src="data:image/jpeg;base64,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" alt="premier.logo" class="logo-seriea">
+      <h2 class="liga-subtitulo">Eras de la Premier League</h2>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era fundacional (1888-15)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+            <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era entreguerras (1919-39)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+            <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de reconstruccion y estrellas locales (1946-59)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>El futbol tecnico (1960-74)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>La hegemonia roja (1975-91)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+       <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Premier League (1992-98)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+            <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Ferguson vs Wegner (1998-03)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>El big four (2004-10)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era celeste (2011-17)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Guardiola vs Klopp (1918-23)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+            <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era moderna (2024-25)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+    </main>
+    
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>

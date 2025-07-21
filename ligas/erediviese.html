@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-ligas.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+</head>
+<body class="fondo-erediviese">
+    <div id="header-container"></div>
+
+    <main class="liga-main">
+      <h1 class="liga-titulo">Eredivisie</h1>
+      <img src="https://d3et0fncpz2hhr.cloudfront.net/_AUTOx240_resize_center-center_85_none/1633173/Eredivisie-icoon-wit.webp" alt="foto" class="logo-seriea">
+      <h2 class="liga-subtitulo"></h2>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era amateur (1898-54)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Transicion profesional (1954-56)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Ajax vs Feyenoord (1956-73)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Primera era de los tres grande (1974-87)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>La academia del Ajax (1988-97)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Segunda era de los tres grandes (1998-08)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de crisis (2009-16)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era Ten Hag (2017-23)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era moderna (2024-25)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      
+
+    </main>
+
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>

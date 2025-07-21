@@ -1,0 +1,26 @@
+/* =========================
+   INDEX (Página principal)
+   ========================= */
+body.fondo-index {
+    background: #EEF2FB;
+}
+body.fondo-index header {
+    background: #045694;
+}
+body.fondo-index nav a {
+    color: #fff;
+}
+body.fondo-index nav a:hover {
+    background: #045690;
+    color: #fff;
+}
+/* Menú desplegable para index.html */
+body.fondo-index #barra-desplegable {
+    background: #fff;
+    color: #045694;
+}
+body.fondo-index #barra-desplegable li:hover,
+body.fondo-index #barra-desplegable li:hover a {
+    background: #357ab8;
+    color: #fff !important;
+}

@@ -1,0 +1,277 @@
+/* =========================
+   CLUBES
+   ========================= */
+
+/* --- Clubes de España --- */
+body.fondo-clubesesp {
+    background: #E4002B;
+}
+body.fondo-clubesesp header {
+    background: #061934;
+}
+body.fondo-clubesesp nav a:hover {
+    background: #FCBB2C;
+    color: #061934;
+}
+body.fondo-clubesesp #barra-desplegable {
+    background: #f5f855;
+    color: #E4002B;
+}
+body.fondo-clubesesp #barra-desplegable li:hover {
+    background: #FCBB2C;
+    color: #061934;
+}
+
+/* --- Clubes de Italia --- */
+body.fondo-clubesitl {
+    background: #092651;
+}
+body.fondo-clubesitl header {
+    background: #0057B8;
+}
+body.fondo-clubesitl nav a {
+    color: #fff;
+}
+body.fondo-clubesitl nav a:hover {
+    background: #fff;
+    color: #0057B8;
+    font-weight: bold;
+    border-left: 4px solid #008C45;
+    border-right: 4px solid #CD212A;
+}
+body.fondo-clubesitl #barra-desplegable {
+    background: #fff;
+    color: #0057B8;
+}
+body.fondo-clubesitl #barra-desplegable li:hover {
+    background: #008C45;
+    color: #fff;
+    font-weight: bold;
+    border-left: 4px solid #CD212A;
+    border-right: 4px solid #fff;
+}
+
+/* --- Clubes de Inglaterra --- */
+body.fondo-clubesing {
+    background: #2E093D;
+}
+body.fondo-clubesing header {
+    background: #1E0021;
+}
+body.fondo-clubesing nav a {
+    color: #fff;
+}
+body.fondo-clubesing nav a:hover {
+    background: #00FF85;
+    color: #1E0021;
+    font-weight: bold;
+}
+body.fondo-clubesing #barra-desplegable {
+    background: #fff;
+    color: #37003C;
+}
+body.fondo-clubesing #barra-desplegable li:hover {
+    background: #00FF85;
+    color: #1E0021;
+    font-weight: bold;
+}
+
+/* --- Clubes de Alemania --- */
+body.fondo-clubesale {
+    background: #191E24;
+}
+body.fondo-clubesale header {
+    background: #34383C;
+}
+body.fondo-clubesale nav a {
+    color: #fff;
+}
+body.fondo-clubesale nav a:hover {
+    background: #ED2226;
+    color: #fff;
+    font-weight: bold;
+}
+body.fondo-clubesale #barra-desplegable {
+    background: #fff;
+    color: #000000;
+}
+body.fondo-clubesale #barra-desplegable li:hover {
+    background: #08560A;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* --- Clubes de Francia --- */
+body.fondo-clubesfra {
+    background: #085FFF;
+}
+body.fondo-clubesfra header {
+    background: #262624;
+}
+body.fondo-clubesfra nav a {
+    color: #FF7FDE;
+}
+body.fondo-clubesfra nav a:hover {
+    background: #000;
+    color: #FFBC0D;
+    font-weight: bold;
+}
+body.fondo-clubesfra #barra-desplegable {
+    background: #262624;
+    color: #000000;
+}
+body.fondo-clubesfra #barra-desplegable li:hover {
+    background: #000;
+    color: #FFBC0D;
+    font-weight: bold;
+}
+
+/* --- Clubes de Portugal --- */
+body.fondo-clubesport {
+    background: #E73827;
+}
+body.fondo-clubesport header {
+    background: #1E271F;
+}
+body.fondo-clubesport nav a {
+    color: #fff;
+}
+body.fondo-clubesport nav a:hover {
+    background: #356F39;
+    color: #fff;
+    font-weight: bold;
+}
+body.fondo-clubesport #barra-desplegable {
+    background: #706F74;
+    color: #000000;
+}
+body.fondo-clubesport #barra-desplegable li:hover {
+    background: #2C2C2E;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* --- Clubes de Holanda --- */
+body.fondo-clubeshol {
+    background: #F36C21;
+}
+body.fondo-clubeshol header {
+    background: #253780;
+}
+body.fondo-clubeshol nav a {
+    color: #fff;
+}
+body.fondo-clubeshol nav a:hover {
+    background: #001F60;
+    color: #fff;
+    font-weight: bold;
+}
+body.fondo-clubeshol #barra-desplegable {
+    background: #0600FF;
+    color: #000000;
+}
+body.fondo-clubeshol #barra-desplegable li:hover {
+    background: #00b7ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* --- Clubes de Argentina --- */
+body.fondo-clubesarg {
+    background: #fff;
+}
+body.fondo-clubesarg header {
+    background: #98CEF0;
+}
+body.fondo-clubesarg nav a {
+    color: #000;
+}
+body.fondo-clubesarg nav a:hover {
+    background: #7abce6;
+    color: #fff;
+    font-weight: bold;
+}
+body.fondo-clubesarg #barra-desplegable {
+    background: #BA9F6C;
+    color: #000000;
+}
+body.fondo-clubesarg #barra-desplegable li:hover {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- Clubes de Brasil --- */
+body.fondo-clubesbra {
+    background: #fff;
+}
+body.fondo-clubesbra header {
+    background: #014DFF;
+}
+body.fondo-clubesbra nav a {
+    color: #fff;
+}
+body.fondo-clubesbra nav a:hover {
+    background: #FFCD00;
+    color: #059E2A;
+    font-weight: bold;
+}
+body.fondo-clubesbra #barra-desplegable {
+    background: #20195F;
+    color: #fff;
+}
+body.fondo-clubesbra #barra-desplegable li:hover {
+    background: #00A032;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- Clubes de EEUU --- */
+body.fondo-clubeseeuu {
+    background: #fff;
+}
+body.fondo-clubeseeuu header {
+    background: #212844;
+}
+body.fondo-clubeseeuu nav a {
+    color: #fff;
+}
+body.fondo-clubeseeuu nav a:hover {
+    background: #15192B;
+    color: #fff;
+    font-weight: bold;
+}
+body.fondo-clubeseeuu #barra-desplegable {
+    background: #E2E2E2;
+    color: #fff;
+}
+body.fondo-clubeseeuu #barra-desplegable li:hover {
+    background: #D8D8D8;
+    color: #000;
+    font-weight: bold;
+}
+
+/* --- Clubes de México --- */
+body.fondo-clubesmex {
+    background: #02914c;
+}
+body.fondo-clubesmex header {
+    background: #0C5258;
+}
+body.fondo-clubesmex nav a {
+    color: #fff;
+}
+body.fondo-clubesmex nav a:hover {
+    background: #15192B;
+    color: #fff;
+    font-weight: bold;
+}
+body.fondo-clubesmex #barra-desplegable {
+    background: #E2E2E2;
+    color: #fff;
+}
+body.fondo-clubesmex #barra-desplegable li:hover {
+    background: #000;
+    color: #BA9F6C;
+    font-weight: bold;
+}

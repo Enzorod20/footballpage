@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-ligas.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+</head>
+<body class="fondo-ligue1">
+    <div id="header-container"></div>
+
+    <main class="liga-main">
+      <h1 class="liga-titulo">Ligue 1</h1>
+      <img src="data:image/png;base64,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" alt="" class="logo-seriea">
+      <h2 class="liga-subtitulo"></h2>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era fundacional (1932-39)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era posguerra (1945-59)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era televisiva (1960-71)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Dominio Verde (1971-81)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Paridad moderna (1982-86)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>La marseillaise (1989-93)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Caos y paridad (1993-01)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>El Lyon de Juninho (2002-08)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Equilibrio post Lyon (2009-12)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>PSG qatari (2013-23)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era moderna (2024-25)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>

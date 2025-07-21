@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-ligas.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+</head>
+<body class="fondo-brasilerao">
+    <div id="header-container"></div>
+
+    <main class="liga-main">
+      <h1 class="liga-titulo">Brasilerao</h1>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQ2IMJT73jCpEQTb2y3XId5ZcBGe88U1iXw&s" alt="Brasilerao.logo" class="logo-seriea">
+      <h2 class="liga-subtitulo"></h2>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de la Taça Brasil(1959-67)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era del Torneio Roberto Gomes Pedrosa(1967-70)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Nacimiento del Brasilerao(1971-86)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era del caos(1987-94)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de estabilizacion(1995-02)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de los puntos corridos(2003-14)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era post mundial(2015-18)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Dominio flaminguista(2018-21)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era moderna(2022-25)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>

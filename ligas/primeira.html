@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-ligas.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+</head>
+<body class="fondo-primeira">
+    <div id="header-container"></div>
+
+    <main class="liga-main">
+      <h1 class="liga-titulo">Primeira Liga</h1>
+      <img src="https://www.ligaportugal.pt/media/liga_portugal_logo_dark.svg" alt="" class="logo-seriea">
+      <h2 class="liga-subtitulo"></h2>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era fundacional (1934-45)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Liderazgo benfiquista (1945-60)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era dorada del Benfica de Eusebio (1960-75)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de transicion (1975-81)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Dominio del Porto (1982-94)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Los tres grandes (1995-02)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>El Porto de Mourinho (2002-04)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de paridad (2005-10)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>El Benfica de Jorge Jesus (2010-15)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de alternancia (2016-25)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>

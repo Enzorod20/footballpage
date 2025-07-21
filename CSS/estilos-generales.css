@@ -1,0 +1,70 @@
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+header {
+    background: #08366b;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    font-weight: 500;
+}
+nav a:hover {
+    background: #357ab8;
+}
+#barra-desplegable {
+    display: none;
+    background: #e3f0fb;
+    color: #204080;
+    padding: 8px 0;
+    border-radius: 6px;
+    font-size: 1.05em;
+    box-shadow: 0 4px 12px rgba(32,64,128,0.12);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 10;
+    margin: 0;
+    min-width: 160px;
+    max-width: 240px;
+    white-space: normal;
+}
+#barra-desplegable ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#barra-desplegable li {
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#barra-desplegable li:hover {
+    background: #b3d4fc;
+}
+#barra-desplegable a,
+#barra-desplegable a:visited,
+#barra-desplegable a:hover,
+#barra-desplegable a:active,
+#barra-desplegable a:focus {
+    text-decoration: none !important;
+    background: none !important;
+    outline: none !important;
+}
+body {
+    padding-top: 80px; /* Ajusta este valor al alto real de tu header */
+}

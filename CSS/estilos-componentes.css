@@ -1,0 +1,431 @@
+/* =========================
+   COMPONENTES Y BLOQUES REUTILIZABLES
+   ========================= */
+
+/* Estilos para el contenedor principal de cada liga */
+.laliga-main,
+.liga-main {
+    max-width: 60vw;   /* Limita el ancho máximo del contenido principal a 60% del ancho de la ventana */
+    margin: 0px auto 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0;         /* Sin relleno interno */
+}
+
+/* Título principal de la liga */
+.laliga-titulo,
+.liga-titulo {
+    text-align: center;      /* Centra el texto */
+    font-size: 4.1em;        /* Tamaño grande de fuente */
+    font-weight: bold;       /* Texto en negrita */
+    letter-spacing: 2px;     /* Espaciado entre letras */
+    color: #fff;             /* Color blanco por defecto */
+    margin-bottom: 0.2em;    /* Espacio debajo del título */
+}
+
+/* Subtítulo de la liga */
+.laliga-subtitulo,
+.liga-subtitulo {
+    text-align: center;      /* Centra el texto */
+    font-size: 1.5em;        /* Tamaño de fuente mediano */
+    color: #fff;             /* Blanco por defecto */
+    margin-bottom: 2em;      /* Espacio debajo del subtítulo */
+    font-weight: 600;        /* Seminegrita */
+    letter-spacing: 1px;     /* Espaciado entre letras */
+}
+
+/* Subtítulo en LaLiga: color blanco (puedes cambiarlo si quieres otro color) */
+body.fondo-laliga .liga-subtitulo {
+    color: #fff;
+}
+
+/* Subtítulo en Serie A: color blanco (opcional, ya es blanco por defecto) */
+body.fondo-seriea .liga-subtitulo {
+    color: #fff;
+}
+
+/* --- Premier League --- */
+body.fondo-premier .liga-titulo {
+    color: #00FF85; /* Cambia el color del título a verde Premier */
+}
+
+body.fondo-premier .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-premier .era-titulo span {
+    background: #2E093D; /* Fondo morado para el nombre de la era */
+    color: #00FF85;      /* Texto verde Premier */
+}
+
+body.fondo-premier .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-premier .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* Espaciado entre bloques de eras */
+.era-laliga,
+.era-liga {
+    margin-bottom: 2.5em; /* Espacio inferior entre secciones de eras */
+}
+
+/* Título de cada era (bloque horizontal con líneas a los lados) */
+.era-titulo {
+    display: flex;              /* Usa flexbox para alinear elementos */
+    align-items: center;        /* Centra verticalmente el contenido */
+    margin-bottom: 1em;         /* Espacio debajo del título */
+    font-size: 1.25em;          /* Tamaño de fuente */
+    font-weight: bold;          /* Negrita */
+    color: #fff;                /* Texto blanco */
+    text-transform: uppercase;  /* Convierte el texto a mayúsculas */
+    letter-spacing: 1px;        /* Espaciado entre letras */
+    position: relative;         /* Para posicionar elementos hijos */
+    z-index: 0;                 /* Orden de apilamiento */
+    cursor: pointer;            /* Cursor de mano al pasar por encima */
+    user-select: none;          /* Evita que el texto se seleccione */
+}
+
+/* Líneas a los lados del título de la era */
+.era-titulo::before,
+.era-titulo::after {
+    content: "";                    /* Elemento vacío para las líneas */
+    flex: 1;                        /* Ocupa el espacio disponible */
+    border-bottom: 1.5px solid #fff;/* Línea blanca */
+    margin: 0 -20vw;                /* Espacio negativo para que la línea sobresalga */
+    opacity: 0.3;                   /* Transparencia de la línea */
+}
+
+/* Texto del título de la era */
+.era-titulo span {
+    white-space: nowrap;    /* Evita que el texto se divida en varias líneas */
+    background: inherit;    /* Sin fondo de color, hereda el fondo del contenedor */
+    padding: 0 1em;         /* Espacio a los lados del texto */
+    position: relative;     /* Para posicionar sobre las líneas */
+    z-index: 1;             /* Encima de las líneas */
+}
+
+/* Solo para LaLiga: fondo rojo en el título de la era */
+body.fondo-laliga .era-titulo span {
+    background: #E4002B;
+}
+
+/* Solo para Serie A: fondo azul en el título de la era */
+body.fondo-seriea .era-titulo span {
+    background: #092651;
+    /* Puedes ajustar el color azul si quieres otro tono */
+}
+
+/* Contenido de la era (texto desplegable) */
+.era-contenido {
+    margin-left: 0;         /* Sin margen izquierdo */
+    padding-left: 0;        /* Sin relleno izquierdo */
+    color: #fff;            /* Texto blanco */
+    font-size: 1.08em;      /* Tamaño de fuente */
+    text-align: left;       /* Alineación a la izquierda */
+    max-height: 2000px;     /* Altura máxima para el efecto desplegable */
+    overflow: hidden;       /* Oculta el contenido que sobrepasa la altura */
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s; /* Animación */
+    opacity: 1;             /* Totalmente visible */
+}
+
+/* Cuando el contenido está minimizado (oculto) */
+.era-contenido.minimizada {
+    max-height: 0;          /* Altura cero */
+    opacity: 0;             /* Totalmente transparente */
+    padding-top: 0 !important;  /* Sin relleno superior */
+    padding-bottom: 0 !important;/* Sin relleno inferior */
+}
+
+/* Imagen alineada a la derecha dentro de una era */
+.era-img-derecha {
+    float: right;               /* Flota a la derecha */
+    margin: 12px 0 12px 24px;   /* Margen alrededor de la imagen */
+    max-width: 260px;           /* Ancho máximo */
+    width: 40vw;                /* 40% del ancho de la ventana */
+    border-radius: 10px;        /* Bordes redondeados */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12); /* Sombra */
+    border: 2px solid #fff;     /* Borde blanco */
+}
+
+/* Contenedor de imagen flotante */
+.img-flotante {
+    float: right;               /* Flota a la derecha */
+    margin: 12px 0 12px 24px;   /* Margen alrededor */
+    max-width: 260px;           /* Ancho máximo */
+    width: 40vw;                /* 40% del ancho de la ventana */
+    text-align: center;         /* Centra el contenido dentro */
+}
+
+/* Imagen dentro del contenedor flotante */
+.img-flotante img {
+    width: 100%;                /* Ocupa todo el ancho del contenedor */
+    border-radius: 10px;        /* Bordes redondeados */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12); /* Sombra */
+    border: 2px solid #fff;     /* Borde blanco */
+    display: block;             /* Muestra como bloque */
+}
+
+/* Texto debajo de la imagen flotante */
+.img-flotante figcaption {
+    color: #fff;                /* Texto blanco */
+    font-size: 0.95em;          /* Tamaño de fuente */
+    margin-top: 6px;            /* Espacio arriba */
+    text-align: center;         /* Centra el texto */
+}
+
+/* --- LaLiga --- */
+body.fondo-laliga .liga-titulo {
+    color: #FCBB2C; /* Cambia el color del título a amarillo LaLiga */
+}
+
+body.fondo-laliga .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-laliga .era-titulo span {
+    background: #E4002B; /* Fondo rojo para el nombre de la era */
+    color: #fff;         /* Texto blanco */
+}
+
+body.fondo-laliga .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-laliga .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* --- Serie A --- */
+body.fondo-seriea .liga-titulo {
+    color: #008C45; /* Cambia el color del título a verde Serie A */
+}
+
+body.fondo-seriea .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-seriea .era-titulo span {
+    /* Fondo azul para el nombre de la era (definido arriba) */
+    color: #fff; /* Texto blanco */
+}
+
+body.fondo-seriea .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-seriea .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* --- Bundesliga --- */
+body.fondo-bundesliga .liga-titulo {
+    color: #ED2226; /* Cambia el color del título a rojo Bundesliga */
+}
+
+body.fondo-bundesliga .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-bundesliga .era-titulo span {
+   background: #191E24; /* Fondo oscuro para el nombre de la era */
+    color: #fff;        /* Texto blanco */
+}
+
+body.fondo-bundesliga .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-bundesliga .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* --- Ligue 1 --- */
+body.fondo-ligue1 .liga-titulo {
+    color: #FFD600; /* Amarillo Ligue 1 */
+}
+
+body.fondo-ligue1 .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-ligue1 .era-titulo span {
+    background: #085FFF; /* Azul oscuro Ligue 1 */
+    color: #FFD600;      /* Amarillo Ligue 1 */
+}
+
+body.fondo-ligue1 .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-ligue1 .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* Logo de la Serie A centrado y con tamaño fijo */
+.logo-seriea {
+    display: block;         /* Hace que la imagen sea un bloque */
+    margin: 0 auto 24px auto; /* Centra la imagen y agrega espacio abajo */
+    max-width: 180px;       /* Ancho máximo de la imagen */
+    width: 40vw;            /* 40% del ancho de la ventana */
+}
+
+/* --- Primeira Liga --- */
+body.fondo-primeira .liga-titulo {
+    color: #fff; /* Rojo Primeira Liga */
+}
+
+body.fondo-primeira .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-primeira .era-titulo span {
+    background: #E73827; /* Verde oscuro Primeira */
+    color: #fff;      /* Rojo Primeira Liga */
+}
+
+body.fondo-primeira .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-primeira .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* --- Eredivisie --- */
+body.fondo-erediviese .liga-titulo {
+    color: #fff; /* Naranja Eredivisie */
+}
+
+body.fondo-erediviese .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-erediviese .era-titulo span {
+    background: #F36C21; /* Fondo gris oscuro */
+    color: #fff;      /* Naranja Eredivisie */
+}
+
+body.fondo-erediviese .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-erediviese .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* --- Primera División Argentina --- */
+body.fondo-primera .liga-titulo {
+    color: #98CEF0; /* Celeste AFA */
+}
+
+body.fondo-primera .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-primera .era-titulo span {
+    background: #fff; /* Azul oscuro AFA */
+    color: #BA9F6C;      /* Dorado/amarillo AFA */
+}
+
+body.fondo-primera .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-primera .era-contenido {
+    color: #000; /* Texto blanco para el contenido de la era */
+}
+
+/* --- Ajustes específicos para la Primera División Argentina --- */
+body.fondo-primera .era-titulo::before,
+body.fondo-primera .era-titulo::after {
+    border-bottom: 1.5px solid #00BFFF; /* Celeste AFA */
+    opacity: 0.5; /* Un poco más visibles */
+}
+
+/* --- Brasilerao --- */
+body.fondo-brasilerao .liga-titulo {
+    color: #009739; /* Verde Brasil */
+}
+
+body.fondo-brasilerao .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-brasilerao .era-titulo span {
+    background: #fff; /* Amarillo Brasil */
+    color: #009739;      /* Verde Brasil */
+}
+
+body.fondo-brasilerao .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-brasilerao .era-contenido {
+    color: #014DFF; /* Texto blanco para el contenido de la era */
+}
+
+/* Líneas laterales celestes para mejor contraste si usas fondo claro en el span */
+body.fondo-brasilerao .era-titulo::before,
+body.fondo-brasilerao .era-titulo::after {
+    border-bottom: 1.5px solid #009739; /* Verde Brasil */
+    opacity: 0.5;
+}
+
+/* --- MLS --- */
+body.fondo-mls .liga-titulo {
+    color: #D50032; /* Rojo MLS */
+}
+
+body.fondo-mls .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-mls .era-titulo span {
+    background: #fff; /* Azul oscuro MLS */
+    color: #003366;      /* Rojo MLS */
+}
+
+body.fondo-mls .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-mls .era-contenido {
+    color: #000; /* Texto blanco para el contenido de la era */
+}
+
+/* Líneas laterales azules para mejor contraste */
+body.fondo-mls .era-titulo::before,
+body.fondo-mls .era-titulo::after {
+    border-bottom: 1.5px solid #003366; /* Azul MLS */
+    opacity: 0.5;
+}
+
+/* --- Liga MX --- */
+body.fondo-ligamx .liga-titulo {
+    color: #E30613; /* Rojo Liga MX */
+}
+
+body.fondo-ligamx .liga-subtitulo {
+    color: #fff; /* Subtítulo blanco */
+}
+
+body.fondo-ligamx .era-titulo span {
+    background: #02914c; /* Fondo gris oscuro */
+    color: #fff;   /* Rojo Liga MX */
+}
+
+body.fondo-ligamx .era-titulo {
+    color: #fff; /* Texto blanco para el título de la era */
+}
+
+body.fondo-ligamx .era-contenido {
+    color: #fff; /* Texto blanco para el contenido de la era */
+}
+
+/* Líneas laterales rojas para mejor contraste */
+body.fondo-ligamx .era-titulo::before,
+body.fondo-ligamx .era-titulo::after {
+    border-bottom: 1.5px solid #E30613; /* Rojo Liga MX */
+    opacity: 0.5;
+}

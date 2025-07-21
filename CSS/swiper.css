@@ -1,0 +1,16 @@
+
+
+    .swiper {
+  width: 100%;
+  /* altura fija para que no se expanda verticalmente */
+  height: 300px;  
+}
+
+.swiper .swiper-slide {
+  /* fondo negro en TODAS las slides */
+  background-color: black;
+  /* opcional: centrar el contenido */
+  justify-content: center;
+  align-items: center;
+  display:table;
+}

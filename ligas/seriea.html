@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../CSS/estilos-ligas.css">
+    <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+
+</head>
+<body class="fondo-seriea">
+    <div id="header-container"></div>
+
+    <main class="liga-main">
+      <h1 class="liga-titulo">SERIE A</h1>
+      <img src="data:image/jpeg;base64,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" alt="logo.seriea" class="logo-seriea">
+      <h2 class="liga-subtitulo"></h2>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era pre Serie A (1898-29)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Dominio del norte (1929-45)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era del Grande Torino (1946-49)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de los tres grandes (1950-70)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era del Catenaccio (1970-82)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era dorada (1983-99)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era de crisis y calciopoli (2000-06)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era post calciopoli (2006-10)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>La Juventus hegemonica (2011-20)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+      <section class="era-liga">
+        <div class="era-titulo desplegable-era">
+          <span>Era moderna (2021-25)</span>
+        </div>
+        <div class="era-contenido">
+          <p>
+            contenido de arranque
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+            // Carga el script del menú después de insertar el header
+            const script = document.createElement('script');
+            script.src = '../javascript/menu.js';
+            document.body.appendChild(script);
+          });
+    </script>
+    <!-- El resto de tu contenido aquí -->
+</body>
+</html>
