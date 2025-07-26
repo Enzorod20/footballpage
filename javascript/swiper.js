@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   // If we need pagination
   pagination: {
@@ -22,7 +22,7 @@ const swiper = new Swiper('.swiper', {
 
    new Swiper('.swiper', {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 0,
       pagination: { el: '.swiper-pagination', clickable: true },
       navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
     });
