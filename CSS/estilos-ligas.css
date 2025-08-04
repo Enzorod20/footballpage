@@ -315,3 +315,107 @@ body.fondo-clubesale #barra-desplegable a:visited {
 body.fondo-clubesale #barra-desplegable li:hover a {
     color: #fff !important;
 }
+
+/* Slider horizontal infinito */
+.clubs-slider {
+  width: 100%;
+  overflow: hidden;
+  background: #FCBB2C;
+  padding: 32px 0;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.clubs-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #E6B800;
+  color: #fff;
+  border: none;
+  font-size: 2.5em;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+.slider-arrow.left { left: 10px; }
+.slider-arrow.right { right: 10px; }
+.slider-arrow:hover { background: #FFD700; }
+
+.club-card {
+  background: #E6B800;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+  max-width: 200px;
+  padding: 24px 18px 16px 18px;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+  cursor: pointer;
+  border: 2.5px solid #FCBB2C;
+  position: relative;
+  font-size: 1.25em;
+}
+
+.club-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: 0px;
+  border: 3px solid rgba(0,0,0,0.67); /* Contorno dorado */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.club-card span {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  color: #061934;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.club-card .titulos {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 4px;
+}
+
+/* Efectos hover por club */
+.club-card.real-madrid:hover { background: #fffbe6; color: #061934; border-color: #b9a074; }
+.club-card.barcelona:hover { background: #A50044; color: #fff; border-color: #A50044; }
+.club-card.atletico:hover { background: #D50032; color: #fff; border-color: #D50032; }
+.club-card.athletic:hover { background: #E30613; color: #fff; border-color: #E30613; }
+.club-card.valencia:hover { background: #fffbe6; color: #000; border-color: #FFCB05; }
+.club-card.sociedad:hover { background: #0056A6; color: #fff; border-color: #0056A6; }
+.club-card.deportivo:hover { background: #2E3092; color: #fff; border-color: #2E3092; }
+.club-card.sevilla:hover { background: #D50032; color: #fff; border-color: #D50032; }
+.club-card.betis:hover { background: #009540; color: #fff; border-color: #009540; }
+
+.club-card:hover span,
+.club-card:hover .titulos {
+  color: inherit;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .club-card { min-width: 110px; max-width: 120px; padding: 10px 6px; }
+  .clubs-slider { padding: 8px 0; }
+  .clubs-track { gap: 8px; }
+}
