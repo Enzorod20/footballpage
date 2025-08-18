@@ -68,3 +68,9 @@ nav a:hover {
 body {
     padding-top: 80px; /* Ajusta este valor al alto real de tu header */
 }
+
+p {
+  text-indent: 1em; /* sangría de primera línea */
+  margin-top: 0;
+  margin-bottom: 1em; /* espacio entre párrafos */
+}
