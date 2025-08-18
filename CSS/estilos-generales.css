@@ -74,3 +74,82 @@ p {
   margin-top: 0;
   margin-bottom: 1em; /* espacio entre párrafos */
 }
+:root{
+  --bg:#061934;         /* fondo principal */
+  --fg:#e9eef6;         /* texto */
+  --muted:#a9b4c2;      /* texto secundario */
+  --accent:#dea325;     /* dorado */
+  --accent2:#c22e2e;    /* rojo auxiliar */
+  --accent3:#4b3ca6;    /* azul auxiliar */
+  --radius:10px;
+  --font-heading:'Bebas Neue', system-ui, sans-serif;
+  --font-body:'Merriweather', serif;
+}
+
+html,body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:var(--font-body); line-height:1.6;
+}
+h1,h2,h3{ font-family:var(--font-heading); letter-spacing:.5px; margin:.2rem 0 .6rem }
+h1{ font-size:clamp(0.2rem,2vw,1rem) }
+h2{ font-size:clamp(1.6rem,3.2vw,2.4rem) }
+.lead{ font-size:clamp(1.05rem,1.6vw,1.25rem); color:var(--muted) }
+
+/* Títulos con “marquita” dorada */
+.section-title{ display:flex; align-items:center; gap:.6rem }
+.section-title::before{ content:""; width:36px; height:4px;
+  background:linear-gradient(90deg,var(--accent),transparent); border-radius:2px }
+
+  /* Estado inicial invisible */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estado visible */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.club-card {
+  perspective: 1000px;
+  cursor: pointer;
+  width: 200px; /* ajusta según tu slider */
+  height: 250px;
+  margin: 0 10px;
+  flex-shrink: 0; /* importante para sliders horizontales */
+}
+
+.club-card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.club-card.is-flipped .club-card__inner {
+  transform: rotateY(180deg);
+}
+
+.club-card__front, .club-card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #061934;
+  color: white;
+}
+
+.club-card__back {
+  background-color: #dea325;
+  color: #061934;
+  transform: rotateY(180deg);
+}

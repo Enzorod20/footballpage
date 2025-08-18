@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/estilos-generales.css">
     <link rel="stylesheet" href="../CSS/estilos-ligas.css">
     <link rel="stylesheet" href="../CSS/estilos-componentes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="fondo-laliga">
@@ -17,7 +18,7 @@
       <!-- Logo principal con alt accesible -->
       <img src="https://assets.laliga.com/assets/logos/LL_RGB_v_monocromatic_negativo/LL_RGB_v_monocromatic_negativo.png" alt="Logo La Liga" class="logo-seriea">
       <h2 class="liga-subtitulo"></h2>
-      <section class="era-laliga">
+      <section class="era-laliga fade-in">
 
         <div class="era-titulo desplegable-era">
             <span>Era fundacional (1929-1936)</span>
@@ -32,7 +33,7 @@
                 <p> Para la temporada 1933-34 el Athletic vuelve a ser campeon gracias a su gran ataque de la mano de Bata(cuyo record de goles fue alcanzado en esta temporada por Langara del Oviedo), Iraragorri y Gorostiza.<br></p>
                 <p> En la temporada 1934-35 se aumenta el cupo de equipos a 12, que tras mucho puterio permitiria el ascenso del Sevilla y del Atletico de Madrid. El campeon y por unica vez en su historia seria el Betis de la mano de Unamuno. Bata se convierte en el maximo goleador historico de la liga aunque Langara vuelve a repetir sus 27 goles en una temporada.<br></p>
                 <p> En la ultima temporada previa a la guerra Civil el Athletic levantaria otro titulo mas de liga. A causa de esta guerra el Oviedo que habia quedado 3ro perdió su estadio y tuvo muchas perdidas por lo que descendio. Por su parte Langara rompia mas record al lograr 28 goles en una temporada.<br></p>
-            <h3>Titulos de liga de cada club en la decada</h3>
+                <h3>Titulos de liga de cada club en la decada</h3>
                 
             <div class="grid4">
               <div class="div1">
@@ -146,7 +147,7 @@
         </div>
       </section>
 
-      <section class="era-laliga">
+      <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Postguerra y consolidación (1939-53)</span>
             </div>
@@ -312,7 +313,7 @@
 
         </section>
 
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>el Real Madrid de Di Stefano(1953-60)</span>
             </div>
@@ -449,7 +450,7 @@
             </div>
         </section>
         
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Dominio madrileño (1960-73)</span>
             </div>
@@ -599,7 +600,7 @@
             
         </section>
 
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Era Cruyff (1973-78)</span>
             </div>
@@ -729,7 +730,7 @@
 
         </section>
         
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Era vasca (1978-85)</span>
             </div>
@@ -887,7 +888,7 @@
 
         </section>
 
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Madrid vs Barcelona (1985-96)</span>
             </div>
@@ -1120,7 +1121,7 @@
 
         </section>
 
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Los Galacticos (1996-08)</span>
             </div>
@@ -1451,7 +1452,7 @@
 
         </section>
         
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Messi vs Cristiano (2008-18)</span>
             </div>
@@ -1808,7 +1809,7 @@
 
         </section>
 
-        <section class="era-laliga">
+        <section class="era-laliga fade-in">
             <div class="era-titulo desplegable-era">
                 <span>Era Moderna (2018-25)</span>
             </div>
@@ -2054,21 +2055,18 @@ margin: 0px;">
   Cantidad de ligas ganadas por club
 </h2>
 
-<div class="clubs-slider" style="background-color: #061934;background-image: url('data:image/svg+xml,%3Csvg width=\'6\' height=\'6\' viewBox=\'0 0 6 6\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23dea325\' fill-opacity=\'0.22\' fill-rule=\'evenodd\'%3E%3Cpath d=\'M5 0h1L0 6V5zM6 5v1H5z\'/%3E%3C/g%3E%3C/svg%3E'); 
-margin: 0px;">
-  <button class="slider-arrow left" aria-label="Club anterior">&#8592;</button>
+<div class="clubs-slider" style="background-color: #061934;background-image: url('data:image/svg+xml,%3Csvg width=\'6\' height=\'6\' viewBox=\'0 0 6 6\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23dea325\' fill-opacity=\'0.22\' fill-rule=\'evenodd\'%3E%3Cpath d=\'M5 0h1L0 6V5zM6 5v1H5z\'/%3E%3C/g%3E%3C/svg%3E'); margin: 0px;"> 
+  <button class="slider-arrow left" aria-label="Club anterior">&#8592;</button> 
   <div class="clubs-track">
-    <!-- Ejemplo de club-card, repite para cada club -->
-    <div class="club-card real-madrid">
-      <div class="club-nombre">Real Madrid</div>
-      <div class="linea"></div>
-      <div class="club-escudo-bg">
-        <img src="https://assets.realmadrid.com/is/image/realmadrid/3kq9cckrnlogidldtdie2fkbl?$Mobile$&fit=wrap&wid=144&hei=144" alt="Escudo Real Madrid">
+     <!-- Ejemplo de club-card, repite para cada club --> 
+      <div class="club-card real-madrid"> 
+        <div class="club-nombre">Real Madrid</div> 
+        <div class="linea"></div> <div class="club-escudo-bg"> 
+          <img src="https://assets.realmadrid.com/is/image/realmadrid/3kq9cckrnlogidldtdie2fkbl?$Mobile$&fit=wrap&wid=144&hei=144" alt="Escudo Real Madrid"> 
+        </div> 
+        <div class="linea"></div> 
+        <div class="club-titulos">36</div> 
       </div>
-      <div class="linea"></div>
-      <div class="club-titulos">36</div>
-
-    </div>
 
     <div class="club-card barcelona">
       <div class="club-nombre">Barcelona</div>
@@ -2162,7 +2160,7 @@ margin: 0px;">
   <button class="slider-arrow right" aria-label="Club siguiente">&#8594;</button>
 </div>
 
-<!-- Sección efecto cards -->
+
 
 
 <!-- Footer -->
@@ -2298,6 +2296,20 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 </script>
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+faders.forEach(el => observer.observe(el));
+</script>
+
 
 </body>
 
