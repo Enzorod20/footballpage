@@ -91,7 +91,8 @@ html,body{
   font-family:var(--font-body); line-height:1.6;
 }
 h1,h2,h3{ font-family:var(--font-heading); letter-spacing:.5px; margin:.2rem 0 .6rem }
-h1{ font-size:clamp(0.2rem,2vw,1rem) }
+h1{ font-size:clamp(0.2rem,2vw,1rem);
+margin-top: 4rem;}
 h2{ font-size:clamp(1.6rem,3.2vw,2.4rem) }
 .lead{ font-size:clamp(1.05rem,1.6vw,1.25rem); color:var(--muted) }
 

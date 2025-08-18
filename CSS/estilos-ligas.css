@@ -445,3 +445,11 @@ body.fondo-clubesale #barra-desplegable li:hover a {
   .clubs-slider { padding: 8px 0; }
   .clubs-track { gap: 8px; }
 }
+
+.club-card {
+  flex-shrink: 0; /* evita que se encoja */
+}
+
+.clubs-track {
+  padding-right: 24px; /* deja espacio para que la última card no se corte */
+}

@@ -2183,12 +2183,16 @@ function getSliderCardWidth() {
   return card.offsetWidth + gap;
 }
 
+
 function clampSliderScroll(val) {
-  const cardW = getSliderCardWidth();
   const visible = sliderTrack.parentElement.offsetWidth;
-  const maxScroll = Math.max(0, cardW * sliderCards.length - visible);
+  const lastCard = sliderTrack.children[sliderTrack.children.length - 1];
+  const lastCardRight = lastCard.offsetLeft + lastCard.offsetWidth;
+  const maxScroll = Math.max(0, lastCardRight - visible);
   return Math.max(0, Math.min(val, maxScroll));
 }
+
+
 
 function updateSlider() {
   sliderScroll = clampSliderScroll(sliderScroll);
