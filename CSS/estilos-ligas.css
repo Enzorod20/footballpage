@@ -130,7 +130,7 @@ body.fondo-ligue1 nav a:hover {
     font-weight: bold;
 }
 body.fondo-ligue1 #barra-desplegable {
-    background: #262624;
+    background: #FF7FDE;
     color: #000000;
 }
 body.fondo-ligue1 #barra-desplegable li:hover {
@@ -210,7 +210,7 @@ body.fondo-primera #barra-desplegable {
 }
 body.fondo-primera #barra-desplegable li:hover {
     background: #fff;
-    color: #000;
+    color: #BA9F6C;
     font-weight: bold;
 }
 
@@ -235,7 +235,7 @@ body.fondo-brasilerao #barra-desplegable {
 }
 body.fondo-brasilerao #barra-desplegable li:hover {
     background: #00A032;
-    color: #000;
+    color: #FFCD00;
     font-weight: bold;
 }
 
@@ -256,11 +256,11 @@ body.fondo-mls nav a:hover {
 }
 body.fondo-mls #barra-desplegable {
     background: #E2E2E2;
-    color: #fff;
+    color: #212844;
 }
 body.fondo-mls #barra-desplegable li:hover {
     background: #D8D8D8;
-    color: #000;
+    color: #D50032;
     font-weight: bold;
 }
 
@@ -281,7 +281,7 @@ body.fondo-ligamx nav a:hover {
 }
 body.fondo-ligamx #barra-desplegable {
     background: #E2E2E2;
-    color: #fff;
+    color: #D50032;
 }
 body.fondo-ligamx #barra-desplegable li:hover {
     background: #000;

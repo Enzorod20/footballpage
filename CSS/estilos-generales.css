@@ -154,3 +154,7 @@ h2{ font-size:clamp(1.6rem,3.2vw,2.4rem) }
   color: #061934;
   transform: rotateY(180deg);
 }
+
+/* Evitar azul/morado por defecto del navegador en el dropdown */
+#barra-desplegable a:link,
+#barra-desplegable a:visited { color: inherit !important; }

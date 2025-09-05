@@ -704,12 +704,19 @@ body.fondo-clubesport #barra-desplegable a:visited {
 }
 
 body.fondo-erediviese #barra-desplegable a,
+body.fondo-erediviese #barra-desplegable a:link,
 body.fondo-erediviese #barra-desplegable a:visited,
+body.fondo-erediviese #barra-desplegable a:hover,
+body.fondo-erediviese #barra-desplegable a:active,
 body.fondo-clubeshol #barra-desplegable a,
+body.fondo-clubeshol #barra-desplegable a:link,
 body.fondo-clubeshol #barra-desplegable a:visited,
-body.fondo-erediviese #barra-desplegable li:hover a,
-body.fondo-clubeshol #barra-desplegable li:hover a  {
+body.fondo-clubeshol #barra-desplegable a:hover,
+body.fondo-clubeshol #barra-desplegable a:active {
     color: #fff !important;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-text-fill-color: #fff !important;
 }
 
 body.fondo-primera #barra-desplegable a,
